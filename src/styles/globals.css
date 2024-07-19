@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* // look in to applying dark theme to system default dark -- this might be how
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-*/
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -68,6 +58,12 @@
     --chart-5: 340 75% 55%;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    TODO copy the dark theme colors here
+  }
+} */
 
 @layer base {
   * {
