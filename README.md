@@ -1,6 +1,6 @@
 # Portfolio v2
 
-- WIP
+This is a revamped version of my portfolio. I want my portfolio to be concise, easy to read, easy to follow, and informative. This version will accomplish that.
 
 # Getting Started
 
