@@ -1,5 +1,9 @@
 "use client";
 
 export default function Main() {
-  return <h1>Main Component</h1>;
+  return (
+    <div className="border-border">
+      <h1>Main Component</h1>
+    </div>
+  );
 }
