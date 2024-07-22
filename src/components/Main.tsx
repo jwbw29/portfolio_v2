@@ -2,7 +2,7 @@
 
 export default function Main() {
   return (
-    <div className="border-border">
+    <div className="testBorder">
       <h1>Main Component</h1>
     </div>
   );
