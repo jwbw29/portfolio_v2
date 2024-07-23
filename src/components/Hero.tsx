@@ -7,7 +7,7 @@ import Nav from "@/components/Nav";
 
 export default function Hero() {
   return (
-    <div className="testBorder p-2 m-2">
+    <div className="testBorder p-2 m-2 md:w-2/5">
       {/* <Image src="/hero.jpg" alt="hero" width={1920} height={1080} /> */}
       <div className="flex size-[250px] testBorder rounded-xl items-center justify-center">
         <h1 className="text-7xl text-center">image</h1>
