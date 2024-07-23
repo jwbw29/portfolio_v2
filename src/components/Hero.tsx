@@ -7,7 +7,8 @@ import Nav from "@/components/Nav";
 
 export default function Hero() {
   return (
-    <div className="testBorder p-2 m-2 md:w-2/5">
+    <header className="testBorder flex flex-shrink-0 flex-col justify-between pb-0 pt-10 md:pt-16 lg:sticky lg:top-0 lg:max-h-screen lg:pb-16">
+      {" "}
       {/* <Image src="/hero.jpg" alt="hero" width={1920} height={1080} /> */}
       <div className="flex size-[250px] testBorder rounded-xl items-center justify-center">
         <h1 className="text-7xl text-center">image</h1>
@@ -17,6 +18,6 @@ export default function Hero() {
       <ButtonGroup />
       <Socials />
       <Nav /> {/*hidden on mobile */}
-    </div>
+    </header>
   );
 }
