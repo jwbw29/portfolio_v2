@@ -10,7 +10,7 @@ import headshot from "../../public/assets/headshot.png";
 
 export default function Hero() {
   return (
-    <header className="testBorder p-2 m-2 md:w-2/5">
+    <header className="testBorder flex flex-col p-2 m-2 md:w-2/5 gap-4">
       <Image
         src={headshot}
         alt="hero"
@@ -18,18 +18,20 @@ export default function Hero() {
         width={250}
         className="rounded-xl"
       />
-      <h1 className="font-bold">Justin Byrd</h1>
-      <h3 className="subtitle">Full-Stack Web Developer</h3>
-      <Button asChild>
-        <Link
-          href="/assets/Justin Byrd Web Developer Resume.pdf"
-          target="_blank"
-        >
-          Resume
-        </Link>
-      </Button>
-      <Socials />
-      <Nav /> {/*hidden on mobile */}
+      <div className="flex flex-col gap-2">
+        <h1 className="font-bold">Justin Byrd</h1>
+        <h3 className="subtitle">Full-Stack Web Developer</h3>
+        <Button asChild className="w-fit">
+          <Link
+            href="/assets/Justin Byrd Web Developer Resume.pdf"
+            target="_blank"
+          >
+            Resume
+          </Link>
+        </Button>
+        <Socials />
+        <Nav /> {/*hidden on mobile */}
+      </div>
     </header>
   );
 }
