@@ -11,13 +11,15 @@ import headshot from "../../public/assets/headshot.png";
 export default function Hero() {
   return (
     <header className="testBorder flex flex-col p-2 m-2 md:w-2/5 gap-4">
-      <Image
-        src={headshot}
-        alt="hero"
-        height={250}
-        width={250}
-        className="rounded-xl"
-      />
+      <div className="md:p-4">
+        <Image
+          src={headshot}
+          alt="hero"
+          height={250}
+          width={250}
+          className="rounded-xl"
+        />
+      </div>
       <div className="flex flex-col gap-2">
         <h1 className="font-bold">Justin Byrd</h1>
         <h3 className="subtitle">Full-Stack Web Developer</h3>
