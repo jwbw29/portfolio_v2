@@ -9,27 +9,32 @@ import {
   PiYoutubeLogoThin,
   PiSnapchatLogoThin,
 } from "react-icons/pi";
-
-const socialUrls = [
-  "http://www.linkedin.com/in/justin-byrd7",
-  "http://www.github.com/jwbw29",
-  "http://www.facebook.com/justin.byrd",
-  "http://www.instagram.com/justin.byrd10",
-  "http://www.x.com/tweeter__byrd",
-  "http://www.youtube.com/jwbw29",
-  "https://t.snapchat.com/plTVcv4U",
-];
+import Link from "next/link";
 
 export default function Socials() {
   return (
     <div className="flex gap-2">
-      <PiLinkedinLogoThin />
-      <PiGithubLogoThin />
-      <PiFacebookLogoThin />
-      <PiInstagramLogoThin />
-      <PiXLogoThin />
-      <PiYoutubeLogoThin />
-      <PiSnapchatLogoThin />
+      <Link href="http://www.linkedin.com/in/justin-byrd7">
+        <PiLinkedinLogoThin />
+      </Link>
+      <Link href="http://www.github.com/jwbw29">
+        <PiGithubLogoThin />
+      </Link>
+      <Link href="http://www.facebook.com/justin.byrd">
+        <PiFacebookLogoThin />
+      </Link>
+      <Link href="http://www.instagram.com/justin.byrd10">
+        <PiInstagramLogoThin />
+      </Link>
+      <Link href="http://www.x.com/tweeter__byrd">
+        <PiXLogoThin />
+      </Link>
+      <Link href="http://www.youtube.com/jwbw29">
+        <PiYoutubeLogoThin />
+      </Link>
+      <Link href="https://t.snapchat.com/plTVcv4U">
+        <PiSnapchatLogoThin />
+      </Link>
     </div>
   );
 }
