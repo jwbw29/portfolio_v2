@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import projectsData from "../../public/data/projectsData.json";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 export default function Projects() {
   return (
@@ -15,10 +16,16 @@ export default function Projects() {
       {/* //// map projects here */}
       {projectsData.map((project, index) => (
         <div key={index} className="flex flex-col">
-          <div className="flex py-2">
-            <h3>{project.name}</h3>
-            <Link href={project.live}>live</Link>
-            <Link href={project.github}>github</Link>
+          <div className="flex gap-4 py-2">
+            <h3 className="self-center">{project.name}</h3>
+            <div className="flex gap-2">
+              <Button variant="outline" asChild className="rounded-xl">
+                <Link href={project.live}>live</Link>
+              </Button>
+              <Button variant="outline" asChild className="rounded-xl">
+                <Link href={project.github}>github</Link>
+              </Button>
+            </div>
           </div>
           <div className="flex flex-col gap-6 md:flex-row w-full">
             <Image

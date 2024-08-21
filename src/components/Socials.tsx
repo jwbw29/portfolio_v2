@@ -10,6 +10,7 @@ import {
   PiSnapchatLogoLight,
 } from "react-icons/pi";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Socials() {
   return (
