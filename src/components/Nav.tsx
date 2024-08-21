@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="flex flex-col">
+    <nav className="hidden md:flex-col md:flex">
       <Link href={"#about"}>
         <p>About Me</p>
       </Link>
