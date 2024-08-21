@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Socials() {
   return (
-    <div className="flex gap-2">
+    <div id="socials" className="flex gap-2">
       <Link href="http://www.linkedin.com/in/justin-byrd7">
         <PiLinkedinLogoThin />
       </Link>
