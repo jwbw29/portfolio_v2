@@ -61,7 +61,30 @@
 
 /* @media (prefers-color-scheme: dark) {
   :root {
-    TODO copy the dark theme colors here
+    --background: #000d1a;
+    --foreground: #f7faff;
+    --card: #000d1a;
+    --card-foreground: #f7faff;
+    --popover: #000d1a;
+    --popover-foreground: #f7faff;
+    --primary: #f7faff;
+    --primary-foreground: #112240;
+    --secondary: #2d3847;
+    --secondary-foreground: #f7faff;
+    --muted: #2d3847;
+    --muted-foreground: #91a4b8;
+    --accent: #2d3847;
+    --accent-foreground: #f7faff;
+    --destructive: #7a1a1a;
+    --destructive-foreground: #f7faff;
+    --border: #2d3847;
+    --input: #2d3847;
+    --ring: #d4e1ed;
+    --chart-1: #3366ff;
+    --chart-2: #339999;
+    --chart-3: #ffaa66;
+    --chart-4: #cc66ff;
+    --chart-5: #ff3366;
   }
 } */
 
@@ -74,5 +97,11 @@
   }
   .testBorder {
     @apply border border-red-500;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  .subtitle {
+    @apply text-base font-light;
   }
 }
