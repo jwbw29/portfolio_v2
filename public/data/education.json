@@ -1,0 +1,18 @@
+[
+  {
+    "school": "Bloom Institute of Technology",
+    "location": "Remote",
+    "url": "https://www.bloomtech.com/",
+    "degree": "Certificate of Completion",
+    "major": "Full Stack Web Development",
+    "dates": "Jun 2023 - Feb 2024"
+  },
+  {
+    "school": "University of Missouri",
+    "location": "Columbia, MO",
+    "url": "https://missouri.edu/",
+    "degree": "Bachelor of Science (B.S.)",
+    "major": "Business Admin. and Management",
+    "dates": "Aug 2008 - May 2013"
+  }
+]
