@@ -1,30 +1,73 @@
 "use client";
-import workExperience from "../../public/data/workExperience.json";
+import experience from "../../public/data/experience.json";
 import Link from "next/link";
 import { RxExternalLink } from "react-icons/rx";
+import { cn } from "../lib/utils";
+import { Badge } from "@/components/ui/badge";
 
 export default function WorkExperience() {
   return (
     <section
-      id="work"
-      className="border border-dashed border-black rounded-lg p-2 m-2 flex flex-col gap-4 md:gap-8"
+      id="experience"
+      className="mb-24 scroll-mt-16"
+      aria-label="Professional work experience"
     >
-      <h2>Work Experience</h2>
-      <ul className="flex flex-col gap-4 md:gap-8 ml-1">
-        {/* //// map work experience here */}
-        {workExperience.map((work, index) => (
-          <li key={index} className="flex flex-col gap-2 ">
-            <h3 className="font-medium">{work.title}</h3>
-            <div className="flex flex-col">
-              <div className="flex gap-2">
-                <h4>{work.company}</h4>
-                <Link href={work.url} className="flex items-center">
-                  <RxExternalLink />
+      <h2 className="tracking-tight">Work Experience</h2>
+      <ul className="ml-1 mt-5 flex flex-col">
+        {experience.map((exp, index) => (
+          <li
+            className={cn(
+              "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-200 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-200 after:content-['']",
+              index !== experience.length - 1 && "pb-10",
+              index === 0 && "after:bg-muted-foreground"
+            )}
+            key={index}
+          >
+            <div className="flex flex-col-reverse justify-between gap-y-2 sm:flex-row">
+              <h3 className="relative flex flex-col leading-snug">
+                <span className="font-medium leading-none tracking-tight">
+                  {exp.title}
+                </span>
+                <Link
+                  href={exp.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="group tracking-tight hover:text-muted-foreground"
+                >
+                  <h4>
+                    {exp.company}
+                    <RxExternalLink className="my-auto ml-1.5 inline-block size-4 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  </h4>
                 </Link>
-              </div>
-              <p className="font-light">{work.dates}</p>
+              </h3>
+              <aside className="flex-shrink-0">
+                <p
+                  aria-label={`Worked from ${exp.dates}`}
+                  className="text-sm font-light"
+                >
+                  {exp.dates}
+                </p>
+                <p
+                  aria-label={`Located in ${exp.location}`}
+                  className="text-sm font-light"
+                >
+                  {exp.location}
+                </p>
+              </aside>
             </div>
-            <p>{work.description}</p>
+            <div className="mt-3 text-skeptic-950">
+              <p className="font-light">{exp.description}</p>
+              <ul
+                className="mr-14 mt-3 flex flex-wrap gap-1.5 tracking-wide sm:gap-2"
+                aria-label="Technology stack"
+              >
+                {exp.skills.map((skill) => (
+                  <li className="" key={skill}>
+                    <Badge className="font-normal">{skill}</Badge>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </li>
         ))}
       </ul>

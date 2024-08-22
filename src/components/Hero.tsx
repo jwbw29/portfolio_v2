@@ -10,7 +10,7 @@ import headshot from "../../public/assets/headshot.png";
 
 export default function Hero() {
   return (
-    <header className="testBorder flex flex-col p-2 md:p-8 m-2 md:w-fit gap-4">
+    <header className="flex flex-col p-2 md:p-8 m-2 md:w-fit gap-4">
       <div className="md:p-4">
         <Image
           src={headshot}

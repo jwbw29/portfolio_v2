@@ -1,5 +1,7 @@
 "use client";
 
+// [ ] Turn this component in to a carousel
+
 import Link from "next/link";
 import Image from "next/image";
 import projectsData from "../../public/data/projectsData.json";
@@ -8,10 +10,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="border border-dashed border-black rounded-lg p-2 m-2 flex flex-col gap-8"
-    >
+    <section id="projects" className="p-2 m-2 flex flex-col gap-8">
       <h2>Projects</h2>
       {/* //// map projects here */}
       {projectsData.map((project, index) => (
