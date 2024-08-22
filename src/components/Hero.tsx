@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Socials from "@/components/Socials";
 import Nav from "@/components/Nav";
 import headshot from "../../public/assets/headshot.jpg";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Hero() {
   return (
@@ -23,14 +24,17 @@ export default function Hero() {
       <div className="flex flex-col gap-2">
         <h1 className="font-bold">Justin Byrd</h1>
         <h3 className="subtitle">Full-Stack Web Developer</h3>
-        <Button asChild className="w-fit">
-          <Link
-            href="/assets/Justin Byrd Web Developer Resume.pdf"
-            target="_blank"
-          >
-            Resume
-          </Link>
-        </Button>
+        <div className="flex gap-2">
+          <Button asChild className="w-fit">
+            <Link
+              href="/assets/Justin Byrd Web Developer Resume.pdf"
+              target="_blank"
+            >
+              Resume
+            </Link>
+          </Button>
+          <ThemeToggle />
+        </div>
         <Socials />
         <Nav /> {/*hidden on mobile */}
       </div>

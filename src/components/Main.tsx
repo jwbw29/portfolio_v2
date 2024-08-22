@@ -7,7 +7,7 @@ import WorkExperience from "./WorkExperience";
 
 export default function Main() {
   return (
-    <main id="main" className="flex flex-col gap-2 m-2 ">
+    <main id="main" className="flex flex-col gap-2 m-2 pt-8">
       <About />
       <Projects />
       <WorkExperience />

@@ -7,6 +7,13 @@ import Image from "next/image";
 import projectsData from "../../public/data/projectsData.json";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Projects() {
   return (
