@@ -28,7 +28,7 @@ export default function Projects() {
           </div>
           <div className="flex flex-col gap-6 md:flex-row w-full">
             <Image
-              className="rounded-3xl self-start mt-4"
+              className="rounded-lg self-start mt-4 border border-muted-foreground"
               src={project.image}
               width={180}
               height={180}
