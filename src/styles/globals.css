@@ -59,7 +59,7 @@
   }
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #000d1a;
     --foreground: #f7faff;
@@ -86,7 +86,7 @@
     --chart-4: #cc66ff;
     --chart-5: #ff3366;
   }
-} */
+}
 
 @layer base {
   * {

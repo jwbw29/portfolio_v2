@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Socials from "@/components/Socials";
 import Nav from "@/components/Nav";
-import headshot from "../../public/assets/headshot.png";
+import headshot from "../../public/assets/headshot.jpg";
 
 export default function Hero() {
   return (
