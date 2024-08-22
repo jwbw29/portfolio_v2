@@ -16,25 +16,25 @@ export default function Socials() {
   return (
     <div id="socials" className="flex gap-4 mt-4">
       <Link href="http://www.linkedin.com/in/justin-byrd7">
-        <PiLinkedinLogoLight className="text-3xl rounded-xl p-1 hover:bg-[#91a4b8]" />
+        <PiLinkedinLogoLight className="text-2xl hover:text-primary" />
       </Link>
       <Link href="http://www.github.com/jwbw29">
-        <PiGithubLogoLight className="text-3xl rounded-xl p-1 hover:bg-[#91a4b8]" />
+        <PiGithubLogoLight className="text-2xl hover:text-primary" />
       </Link>
       <Link href="http://www.facebook.com/justin.byrd">
-        <PiFacebookLogoLight className="text-3xl rounded-xl p-1 hover:bg-[#91a4b8]" />
+        <PiFacebookLogoLight className="text-2xl hover:text-primary" />
       </Link>
       <Link href="http://www.instagram.com/justin.byrd10">
-        <PiInstagramLogoLight className="text-3xl rounded-xl p-1 hover:bg-[#91a4b8]" />
+        <PiInstagramLogoLight className="text-2xl hover:text-primary" />
       </Link>
       <Link href="http://www.x.com/tweeter__byrd">
-        <PiXLogoLight className="text-3xl rounded-xl p-1 hover:bg-[#91a4b8]" />
+        <PiXLogoLight className="text-2xl hover:text-primary" />
       </Link>
       <Link href="http://www.youtube.com/jwbw29">
-        <PiYoutubeLogoLight className="text-3xl rounded-xl p-1 hover:bg-[#91a4b8]" />
+        <PiYoutubeLogoLight className="text-2xl hover:text-primary" />
       </Link>
       <Link href="https://t.snapchat.com/plTVcv4U">
-        <PiSnapchatLogoLight className="text-3xl rounded-xl p-1 hover:bg-[#91a4b8]" />
+        <PiSnapchatLogoLight className="text-2xl hover:text-primary" />
       </Link>
     </div>
   );

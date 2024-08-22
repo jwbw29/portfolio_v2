@@ -55,7 +55,7 @@ export default function WorkExperience() {
                 </p>
               </aside>
             </div>
-            <div className="mt-3 text-skeptic-950">
+            <div className="mt-3">
               <p className="font-light">{exp.description}</p>
               <ul
                 className="mr-14 mt-3 flex flex-wrap gap-1.5 tracking-wide sm:gap-2"
