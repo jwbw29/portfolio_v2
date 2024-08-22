@@ -17,7 +17,7 @@ export default function Education() {
         {education.map((edu, index) => (
           <li
             className={cn(
-              "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-slate-200 before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-slate-200 after:content-['']",
+              "relative ml-3 pl-5 before:absolute before:-left-2 before:top-2 before:h-full before:w-0.5 before:rounded-full before:bg-muted-foreground before:content-[''] after:absolute after:-left-[0.93rem] after:top-1 after:size-4 after:rounded-full after:bg-muted-foreground after:content-['']",
               index !== education.length - 1 && "pb-10"
             )}
             key={index}
