@@ -95,8 +95,17 @@
   body {
     @apply bg-background text-foreground;
   }
-  .testBorder {
+  .testBorder-red {
     @apply border border-red-500;
+  }
+  .testBorder-green {
+    @apply border border-green-500;
+  }
+  .testBorder-blue {
+    @apply border border-blue-500;
+  }
+  .testBorder-yellow {
+    @apply border border-yellow-500;
   }
   h1 {
     @apply text-4xl;
